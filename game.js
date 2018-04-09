@@ -83,6 +83,9 @@ const game = function (playerNames) {
           throw new Error("The given player does not exist");
         currentPlayer = instance.getPlayer(name);
       }
+    },    
+    cardsToDraw: {
+      get: () => cardsToDraw
     },
     nextPlayer: {
       get: () => getNextPlayer()
